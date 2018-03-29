@@ -30,13 +30,15 @@ public class PointSystem : MonoBehaviour {
 		}
 
 		sumPoints += point;
-		Debug.Log (sumPoints,this);
+
 	}
 
 //	 Update is called once per frame
 	void Update () {
 
+		Debug.Log (sumPoints,this);
 		this.pointsText.GetComponent<Text> ().text = sumPoints.ToString();
+
 
 	}
 
